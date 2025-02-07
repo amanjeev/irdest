@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2019-2021, 2023 Katharina Fey <kookie@spacekookie.de>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later WITH LicenseRef-AppStore
+
 [package]
 name = "netmod-ble"
 version = "0.1.0"
@@ -6,3 +10,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+task-notify = { version = "1.0", path = "../../utils/task-notify" }
+libratman = { version = "0.6", path = "../../ratman/libratman", features = ["netmod"] }
+useful-netmod-bits = { path = "../../utils/useful-netmod-bits" }
+
+async-trait = "0.1"
+bincode = "1.0"
+libc = "0.2"
+pnet_datalink = "0.31.0"
+serde = { version = "1.0", features = ["derive"] }
+tracing = "0.1"
