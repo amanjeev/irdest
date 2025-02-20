@@ -31,7 +31,7 @@ members = [
     "netmods/netmod-wd",
 
     # End-user applications (of varying complexity)
-    "clients/ratman-tools",
+    "clients/ratman-tools", "firmware/ble-modem",
     # "clients/android-vpn/jni",
     # "clients/irdest-echo",
     # "clients/irdest-mblog",
