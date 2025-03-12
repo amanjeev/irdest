@@ -41,4 +41,5 @@ members = [
 exclude = [
     # Firmware abstractions and crates
     "firmware/lora-modem",
+    "firmware/ble-esp32-modem",
 ]
